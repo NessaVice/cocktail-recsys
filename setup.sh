@@ -3,7 +3,6 @@ echo "[server]
 headless = true
 port = $PORT
 enableCORS = false
-
 [theme]
 primaryColor='#f50ca0'
 backgroundColor='#191015'
