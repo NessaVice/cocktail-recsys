@@ -34,7 +34,7 @@ with col1:
 
 with col2:
     st.image("./images/clovis_wood_removebg_glow.png", width = 100)
-    st.caption("Number of drinks in database:")
+    st.markdown("<h4 style='text-align: center'>Number of drinks in database:</h4>")
     st.metric(
         label= "Number of drinks in database",
         value= len(cocktails),
