@@ -33,7 +33,7 @@ with col1:
         print_reco_list(recommendations, nb_of_recs)
 
 with col2:
-    st.image("./images/clovis_wood_removebg_glow.png")
+    st.image("./images/clovis_wood_removebg_glow.png", width = 25)
     st.caption("Number of drinks in database:")
     st.metric(
         label= "Number of drinks in database",
