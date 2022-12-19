@@ -4,9 +4,9 @@ from recsys_functions import *
 
 cocktails = get_data()
 
-st.image("./images/cocktail_row_removebg_glow.png")
-st.title('Cocktail Recommender System')
 
+st.title('Cocktail Recommender System')
+st.image("./images/cocktail_row_removebg_glow.png")
 
 selected_cocktail_name = st.selectbox(
     "Type or select a Cocktail from the dropdown menu",
