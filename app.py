@@ -4,9 +4,9 @@ from recsys_functions import *
 
 cocktails = get_data()
 
-
-st.title('Cocktail Recommender System')
 st.image("./images/cocktail_row_removebg_glow.png")
+st.title('Cocktail Recommender System')
+
 
 selected_cocktail_name = st.selectbox(
     "Type or select a Cocktail from the dropdown menu",
@@ -19,6 +19,7 @@ nb_of_recs = st.number_input(
     max_value=30,
     value=10
 )
+
 
 col1, col2 = st.columns(spec=(5,1))
 
