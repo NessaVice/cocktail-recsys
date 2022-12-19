@@ -33,10 +33,12 @@ with col1:
         print_reco_list(recommendations, nb_of_recs)
 
 with col2:
-    st.image("./images/clovis_wood_removebg_glow.png", width = 100)
-    st.markdown("<h4 style='text-align: center'>Number of drinks in database:</h4>", unsafe_allow_html=True)
+    
+    st.markdown("<p style='text-align: center'>Number of drinks in database:</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center'>{}</p>".format(len(cocktails)), unsafe_allow_html=True)
     st.metric(
         label= "Number of drinks in database",
         value= len(cocktails),
         label_visibility='collapsed'
-    )  
+    )
+    st.image("./images/clovis_wood_removebg_glow.png")
