@@ -1,5 +1,4 @@
 import streamlit as st
-# import pickle
 import pandas as pd
 from recsys_functions import *
 
@@ -7,13 +6,6 @@ cocktails = get_data()
 
 st.image("./images/cocktail_row_removebg_glow.png")
 st.title('Cocktail Recommender System')
-
-# with st.sidebar:
-#     st.image("./images/cocktail_row_removebg.png")
-#     st.metric(
-#         label= " Number of drinks in database",
-#         value= len(cocktails)
-#     )
 
 
 selected_cocktail_name = st.selectbox(
